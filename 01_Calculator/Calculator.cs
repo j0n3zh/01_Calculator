@@ -7,9 +7,9 @@ using System.Diagnostics;
 
 namespace _01_Calculator
 {
-    class Calculator
+    public class Calculator
     {
-        internal static int Add(params int[] values)
+        public static int Add(params int[] values)
         {
             int length = values.Length;
             int sum = 0;
@@ -20,7 +20,7 @@ namespace _01_Calculator
            return sum;
         }
 
-        internal static int Subtract(params int[] values)
+        public static int Subtract(params int[] values)
         {
             int length = values.Length;
             int sum = values[0];
@@ -31,7 +31,7 @@ namespace _01_Calculator
             return sum;
         }
 
-        internal static object Sum(int[] values)
+        public static object Sum(params int[] values)
         {
             int length = values.Length;
             int sum = 0;
@@ -42,7 +42,7 @@ namespace _01_Calculator
             return sum;
         }
 
-        internal static int Multiply(params int[] values)
+        public static int Multiply(params int[] values)
         {
             int length = values.Length;
             int sum = values[0];
@@ -53,12 +53,12 @@ namespace _01_Calculator
             return sum;
         }
 
-        internal static double Power(int Base, int Expo)
+        public static double Power(int Base, int Expo)
         {
             return Math.Pow(Base, Expo);
         }
 
-        internal static int Factorial(int Fact)
+        public static int Factorial(int Fact)
         {
             int sum = Fact;
             for (int i = Fact - 1; i > 0; i--)
